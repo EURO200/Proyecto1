@@ -10,5 +10,7 @@ namespace TrabajoP.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<TrabajoP.Models.Employce> Employces { get; set; }
     }
 }
