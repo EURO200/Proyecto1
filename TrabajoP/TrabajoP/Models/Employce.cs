@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿
+
 
 namespace TrabajoP.Models
 {
+    using System.ComponentModel.DataAnnotations;
     public class Employce
     {
+        [Key]
         public int ID { get; set; }
+        [Required]
         public string Name { get; set; }
-        public string birthday{ get; set; }
+        [Required]
+        public string Birthday { get; set; }
+        [Required]
+        [Range(1,100000)]
         public int Salary { get; set; }
     }
 }
